@@ -5,7 +5,7 @@
 
 ||**Oju**|**Ria**|**Rucha**|**Neeya** |
 | :- | :- | :- | :- | :- |
-|Tasks|Drafting final project proposal|Set up GitHub repository|Setting up development log/ final project proposal|Updating team contract|
-|Problems encountered|||||
+|Tasks|Drafting final project proposal|Set up GitHub repository|Setting up development log|Updating team contract|
+|Problems encountered|Indecisive on which datasets to use in order to most appropriately and effectively answer our proposed question.|No problems encountered|No problems encountered|No problems encountered|
 
 **Plan for next week:** Load our selected data files as a graph and be able to use that graph to run a find person traversal algorithm on the file
