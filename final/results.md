@@ -4,19 +4,17 @@ Traversal: The traversal method that we chose to implement was BFS, which can be
 \
 We tested this method by asserting that the size of the vector that is returned should always equal 4039 since that is the number of nodes that is present in our dataset, and any time we call BFS it should be comparing that starting node to the rest of the data set, thus always returning a vector of size 4039. \
 \
-The results and passing test cases from our BFS algorithm can be found in results/BFS.png \
+The vectors of all the degrees of separation from the tested starting nodes can be found in results/BFS.jpeg.This output from our BFS method displays that the method works by showing that each node is eventually visited.
 \
 Covered Method: The covered method that we implemented was Prim’s algorithm, which can be found in /code/src/adjacency_list.cc. The purpose of Prim’s algorithm is to find the minimum spanning tree for a weighted undirected graph. All relationships between Facebook friends are equal so they are unweighted, which we solved by assigning all of the edges with an edge weight of 1. \
 \
 We tested this method by testing one of the helper methods that is called in the function, ‘inMST’. We tested inMST because it ensures that the disjoint set that the algorithm is calculating remains acyclic, and once a cycle is present the code stops running, which is a key part of calculating the minimum spanning tree.We tested this method by testing one of the helper methods that is called in the function, ‘inMST’. We tested inMST because it ensures that the disjoint set that the algorithm is calculating remains acyclic, and once a cycle is present the code stops running, which is a key part of calculating the minimum spanning tree. \
 \
-The results and passing test cases from inMST can be found in results/Prims.png \
-\
 Uncovered Method: The uncovered method we chose to implement was a* algorithm, which can be found in /code/src/adjacency_list.cc. A* algorithm is a search algorithm that finds the shortest path between a start node and a destination node. This method is key in investing our claim on degrees of separation because if the claim is true, then any two given nodes that are inputted should result in a shortest path that is less than a length of 6. This method returns the degrees of separation between two inputted nodes, which also helps us explore the connection between two facebook user’s because we can see if they are “friends,” or “friends of friends” and so forth. \
 \
 We tested this method by asserting that certain nodes had certain degrees of separation that we validated through our inputted csv. For example, if there is a direct edge between node 0 and node 1, we asserted that the degrees of separation between these two nodes were 1. We did this for a few different nodes of varying degrees of separation. \
 \
-The results and passing test cases from A* can be found in results/A*.png
+The distances between the tested nodes and our passing test cases from A* can be found in results/A*.png
 
 # The answer to the leading question:
 
