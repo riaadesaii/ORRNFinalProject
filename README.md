@@ -9,7 +9,7 @@
 </p>
 
 
-## [Presentation Video]()
+## [Presentation Video](https://youtu.be/5SEYeWdOb2Q)
 
 ## Data
 
@@ -35,29 +35,23 @@ Make sure you are running the program in [Docker](https://www.docker.com/). If n
 
 ### Executable
 
-To use our Complete California Experience program, run `make` then `./main` in the root directory. Follow the instructions of our program and you are good to go!
+To use our program, run `make` then `./main` in the root directory. Follow the instructions of our program and you are all set!
 
-We call all the functions in `main.cpp` for you (through a fleshed-out `utils.cpp` that will print clear instructions on what your user input should be). The required inputs for each of the functionality are as follows:
+We call all the functions in `main.cpp` for you, with clear prompts on what inputs to use. The required inputs for each of the functionality are as follows:
 
-1. GPS (Dijkstra's): 
-   - Input: starting node number and ending node number (both should be integer between 0 and 21047)
-   - Output: the shortest path (nodes it passes through) and the distance of the shortest path (in km)
-   - Image Output: `californiaShortestPath.png` that outlines the shortest path on the California map constructed from our nodes
-2. Sporadic Tour (Welsh-Powell Colorability):
-   - Input: an integer within the given bounds (currently it's 1-3)
-   - Output: the node numbers, based on our colorability algorithm, that correspond to your given input and represent places you should visit
-3. Nearest Attraction (KD Tree Nearest Neighbors):
-   - Input: longitude (-124.389343 ~ -114.294258) and latitude (32.541302 ~ 42.017231)
-   - Output: a latitude - longitude pair that indicates a California attraction that is closest to your current location
-4. Lazy/Cluster Travel (BFS): 
-   - Input: starting node number (integer between 0 and 21047)
-   - Output: a traversal path within your current cluster
-
-In addition to the above overarching functions that are called in `main.cpp`, we also have clear input and output definitions in the comments for each small functions, so you can always refer to those.
+1. BFS: 
+   - Input: Starting user ID (between 0 and 4038)
+   - Output: The distance from this user's ID to the "root" user ID in the data set
+2. Prim's MST:
+   - Input: Starting user ID (between 0 and 4038)
+   - Output: The spanning tree of the graph with this starting node (this user's "friend circle")!
+3. A* Search:
+   - Input: Two user ID's (between 0 and 4038)
+   - Output: The "path" between these two users- how many degrees they are separated by!
 
 ### Tests
 
-To run the test cases, run `make test` then `./test` in the main directory.
+To run the test cases, run `make tests` then `./tests` in the main directory.
 
 We constructed many small to medium sized datasets in [`/tests`](https://github.com/riaadesaii/ORRNFinalProject/tree/main/code/tests) directory, which are used as test cases to evaluate if the output of our algorithms are as expected. Our tests focus on testing the functionality of the graph construction as an adjacency matrix, Prim's Algorithm, BFS Traversal, and A* algorithm.
 
