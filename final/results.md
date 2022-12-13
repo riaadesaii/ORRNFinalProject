@@ -14,7 +14,7 @@ Uncovered Method: The uncovered method we chose to implement was a* algorithm, w
 \
 We tested this method by asserting that certain nodes had certain degrees of separation that we validated through our inputted csv. For example, if there is a direct edge between node 0 and node 1, we asserted that the degrees of separation between these two nodes were 1. We did this for a few different nodes of varying degrees of separation. \
 \
-The distances between the tested nodes and our passing test cases from A* can be found in results/A*.png
+The distances between the tested nodes and our passing test cases from A* can be found in results/A*.jpeg
 
 # The answer to the leading question:
 
